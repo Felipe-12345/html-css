@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Amelinda ;
+    src: url(fontes/Amelinda.otf) format(opentype), url(fontes/Amelinda.ttf) format(truetype);
+}
+
+
+
+* { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1  {
+    text-align: center;
+    color: #732634;
+    font-weight: bolder;
+    font-size: 4em;
+    font-family: 'Amelinda',sans-serif;
+    text-shadow: 1px 1px 15px #6d6768 ;
+    
+}
+
+main { background-color: white;
+    width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #664650;
+    
+}
+
+body {
+    background-image: linear-gradient(to right, #e26385 40%, #FAACC4);
+}

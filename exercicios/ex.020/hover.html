@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de hover</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div > p { /* colocar o  ">" significa que a div é o pai do "P", entao voce vai mexer no P que está dentro da div  */
+
+            display: none; /*significa que vai esconder oq vc colocar */
+        }
+
+        div:hover > p { 
+            display: block; /* è o oposto do "none", ele faz aparecer, entao quando colocar "div:hover > P" vc vai mexer quando vc passar o mouse no "P" da DIV */
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover { 
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passeo mouse sobre o txto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIO...</p>
+    </div>
+    
+</body>
+</html>

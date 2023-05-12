@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagens Dinamincas</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simsplesmente diminua o tmanao do seu navegador\</p>
+    <picture>
+        < source  media =" (max-width: 750px) " srcset =" imagens/foto-p.png " type =" imagem/png " >
+       <source media =" (max-width: 750px) " srcset =" imagens/foto-p.pnj " type =" imagem/pnj "> 
+        <source media ="(max-width: 1050px) " srcset ="imagens/foto-m.pnj " type =" image/pnj ">
+       <img src="imagens/imagem1.png" alt="imagem flexivel">
+    </picture>
+    <h1>reproduzindo audios</h1>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+    <audio controls preload="metadata" autoplay loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.mp3" type="audio/ogg">
+        <source src="midia/happy-mistake.mp3" type="audio wav">
+    </audio>
+
+    </audio>
+    <audio autoplay controls preload= "metadata" loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav">
+    </audio>
+    <p>essesforama luns audios galerinha entendeu</p>
+    
+    
+</body>
+</html>
