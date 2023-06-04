@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexom" id="isexom" value="M"><label for="isexom" >Masculino</label>
+            <input type="radio" name="sexom" id="isexof" value="F"><label for="isexof">Feminino</label>
+        </fieldset>
+
+        /*
+            Todo 'input:radio' tem que ter o mesmo 'name'
+            a tag 'cheked' é para já deixar marcado 
+            só posso marcar dentro do mesmo grupo
+            coloca valor para reconhecer qual é qual
+        */
+
+
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="basq" id="ibasq"> <label for="ibasq">Basquete</label>  <br>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label> <br>
+            <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tênis</label> <br>
+            
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
