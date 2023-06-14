@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*todas as demais medias*/
+
+/* Typical device breakponts
+------------------------------
+pequenas telas: até 600px
+celular: de 600px at5é 768px
+tablet: 768px até 992px
+desktop: 992px até  1200px
+grandes telas:  acima de 1200px
+
+*/
+
+@media print{/*impressao*/
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {/*tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone{  display: none;}
+    img#tablet{ display: block;}
+    #print{ display: none;}
+    #pc{ display: none;}
+    #tv{ display: none;}    
+}
+
+@media screen and ( min-width: 992px ) and (max-width: 1200px){ /*pc*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{  display: none;}
+    img#tablet{ display: none;}
+    #print{ display: none;}
+    #pc{ display: block;}
+    #tv{ display: none;}   
+}
+
+@media screen and (min-width:1200px){ /*grandes telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone{  display: none;}
+    img#tablet{ display: none;}
+    #print{ display: none;}
+    #pc{ display: none;}
+    #tv{ display: block;}   
+}
